@@ -15,9 +15,9 @@ namespace XamarinFormsSliderApp.Views
         void Handle_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
         {
             var newStep = Math.Round(e.NewValue / 100);
-            slider2.Value = newStep * 100;
-            lblText.Text = slider2.Value.ToString();
-            lblText.TranslateTo(slider2.Value * ((slider2.Width - 40) / slider2.Maximum) , 0, 100);
+            mySlider.Value = newStep * 100;
+            lblText.Text = mySlider.Value.ToString();
+            lblText.TranslateTo(mySlider.Value * ((mySlider.Width - 40) / mySlider.Maximum) , 0, 100);
         }
     }
 }

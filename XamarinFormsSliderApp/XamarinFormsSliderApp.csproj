@@ -29,7 +29,6 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
-    <EmbeddedResource Include="XamarinFormsSliderAppPage.xaml" />
     <EmbeddedResource Include="Views\MyPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -38,9 +37,6 @@
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="XamarinFormsSliderAppPage.xaml.cs">
-      <DependentUpon>XamarinFormsSliderAppPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\CustomSlider.cs" />
