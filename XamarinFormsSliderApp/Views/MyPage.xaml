@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinFormsSliderApp.Views.MyPage" xmlns:local="clr-namespace:XamarinFormsSliderApp.Controls;assembly=XamarinFormsSliderApp">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblText" Text="0" HorizontalOptions="Start" FontSize="Micro" HorizontalTextAlignment="Center" VerticalOptions="EndAndExpand" >
+            <Label.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="15,0" />
+                    <On Platform="Android" Value="10,0" />
+                </OnPlatform>
+                </Label.Margin>
+            </Label>
+            <Slider x:Name="slider2" Maximum="10000" Minimum="100" HorizontalOptions="FillAndExpand" ValueChanged="Handle_ValueChanged" >
+                <Slider.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="10,0" />
+                </OnPlatform>
+                </Slider.Margin>
+            </Slider>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
