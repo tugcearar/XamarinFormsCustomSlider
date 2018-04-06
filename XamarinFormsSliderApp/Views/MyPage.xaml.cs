@@ -12,7 +12,7 @@ namespace XamarinFormsSliderApp.Views
             InitializeComponent();
         }
 
-        void Handle_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
+        void Slider_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
         {
             var newStep = Math.Round(e.NewValue / 100);
             mySlider.Value = newStep * 100;
