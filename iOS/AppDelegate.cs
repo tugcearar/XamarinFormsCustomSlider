@@ -15,8 +15,8 @@ namespace XamarinFormsSliderApp.iOS
             global::Xamarin.Forms.Forms.Init();
 
             LoadApplication(new App());
-            UISlider.Appearance.TintColor = UIColor.FromRGBA(255, 160, 0, 255);
-            UISlider.Appearance.ThumbTintColor = UIColor.FromRGBA(255, 160, 0, 255);
+            UISlider.Appearance.TintColor = UIColor.FromRGBA(119, 38, 232, 255);
+            UISlider.Appearance.ThumbTintColor = UIColor.FromRGBA(89, 177, 124, 255);
             return base.FinishedLaunching(app, options);
         }
     }
