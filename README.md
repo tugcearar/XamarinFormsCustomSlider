@@ -1,5 +1,5 @@
 # XamarinFormsCustomSlider
-Simple Xamarin.Forms Slider without defining custom renderer. Put a floating label on top of it.
+Simple Xamarin.Forms Slider without custom renderer. Put a floating label on top of it.
 
 <table>
 <tbody>
